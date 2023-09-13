@@ -22,14 +22,14 @@
 		  const canvas = document.getElementById("myCanvas");
                   const ctx = canvas.getContext("2d");
 		  ctx.beginPath();
-		  ctx.stroleStyle="#FF0000";
+		  ctx.stroleStyle="#FF2222";
 		  ctx.rect(20, 40, 50, 50);
 		  let x=20;
 		  let y=40;
-		  for(let i = 0; i < 16; i++){
+		  for(let i = 0; i < 16; ++i){
 			  ctx.rect(x, y, 50, 50);
 			  x=20+(50*(i%4));
-			  if(i%4==0){
+			  if((i%4)==0){
 				  y+=50;
 			  }
 		  }
